@@ -1,9 +1,14 @@
+/* import Inter font, pentru a fi folosit in aplicatie */
+@import url('https://fonts.googleapis.com/css2family=Inter:wght@100&display=swap');
+
 html{
   height: 100%;
   width: 100%;
 }
 
+/* baza css-ului */
 :root{
+  /*definim culorile principale*/
   --black: #2D2E2E;
   --dark-green: #3A4F39;
   --grey: #ABABAB;
@@ -12,5 +17,42 @@ html{
   --light-green: #EFF6F3;
   --yellow: #F8D254;
   --green: #A0CD9E;
+
+ 
+  /* Textul de baza */
+  color: #000;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  
 }
 
+/*stilul h1*/
+h1{
+  font-size: 50px;
+  font-weight: 600;
+}
+
+/*definim stilul textului pentru meniuri, prin intermediul unei clase*/
+.menu-title{
+  font-size: 32px;
+  font-weight: 600;
+}
+
+/*textul bold*/ 
+b, strong{
+  font-weight: 600;
+}
+
+/*butonul implicit*/ 
+button{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.caption{
+  font-size: 12px;
+  font-weight: 400;
+}
