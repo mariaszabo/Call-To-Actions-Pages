@@ -114,3 +114,44 @@ button{
   opacity: 0.6;
   cursor: not-allowed;
 }
+
+/* stilul input default */
+input{
+  display: flex;
+  width: 510px;
+  padding: 17px 16px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--light-grey);
+  color: var(--grey);
+  border: 2px solid var(--light-grey);
+}
+
+input:hover{
+  border: 2px solid var(--green);
+}
+
+/*punem partea de input si cea de button pe acelasi rand*/
+/* 
+  <div class="input-button">
+    <input />
+    <button />
+  </div>
+*/
+/*input+button*/
+.input-button{
+  display: flex;
+}
+
+/* Stil special pentru elemente din interiorul .input-button */
+/*input in input-button*/
+.input-button > input{
+  border-radius: 4px 0px 0px 4px;
+  border-width: 2px 0px 2px 2px;
+}
+
+/*button in input-button*/
+.input-button > button{
+  border-radius: 0px 4px 4px 0px;
+}
