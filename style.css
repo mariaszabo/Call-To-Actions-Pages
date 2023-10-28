@@ -50,9 +50,61 @@ b, strong{
 button{
   font-size: 18px;
   font-weight: 500;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 .caption{
   font-size: 12px;
   font-weight: 400;
+}
+
+.btn-large{
+  padding: 17px 30px;
+}
+
+.btn-middle{
+  padding: 13px 25px;
+}
+
+.btn-small{
+  padding: 10px 20px;
+}
+
+.btn-primary{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border: 0;
+  border-radius: 4px;
+  background: var(--dark-green);
+  color: var(--white);
+}
+
+.btn-primary:hover{
+  background-color: #283A27
+}
+
+.btn-secondary{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid var(--dark-green);
+  background: var(--white);
+  color: var(--dark-green);
+}
+
+.btn-secondary:hover{
+  border-color: #213220;
+  color: #213220;
+}
+
+.btn-disabled{
+  opacity: 0.6;
+  cursor: not-allowed;
 }
